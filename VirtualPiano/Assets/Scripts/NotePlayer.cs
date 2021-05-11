@@ -3,6 +3,7 @@ using System.Collections;
 
 public class NotePlayer : MonoBehaviour
 {
+    bool isActive = false;
     AudioSource audioSource;
     public AudioClip audioClip;
     public string note;
@@ -16,24 +17,25 @@ public class NotePlayer : MonoBehaviour
     }
 
     void Update(){
-        if(this.transform.position.y < 1.3f){
+        if((this.transform.position.y < 1.3f) && (isActive == false)){
             this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y+0.01f, this.transform.position.z);
         }
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        // Debug.Log("on collision enter with " + note + " magnitude " + collision.relativeVelocity.magnitude );
-
         if ((collision.relativeVelocity.magnitude > 0.7)) {
-                    // Debug.Log("note: "+note);
+            Debug.Log("collision occured");
             Debug.Log(collision.gameObject.transform.parent.name + " " + note + " " + collision.relativeVelocity.magnitude);
-            // audioSource.Play();
+            isActive = true;
             audioSource.PlayOneShot(audioClip, 1.0f);
             this.transform.position = new Vector3(this.transform.position.x, 1.2f, this.transform.position.z);
-  
-
         }
 
+    }
+    void OnCollisionExit(Collision collision)
+    {
+        Debug.Log("letting go");
+        isActive = false;
     }
 }
