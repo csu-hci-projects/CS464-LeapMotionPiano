@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>CS464 Virtual Piano</title>
+                <link rel="stylesheet" type="text/css" href="home.css">
+        </head>
+        <header>
+                <img class="header-logo" src="logo.png" alt="note logo">
+                <h1 id="title">CS464 Virtual Piano</h1>
+        </header>
+        <body>
+                <div id="navbar">
+                        <ul id="nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="About.html">About Us</a></li>
+                                <li><a href="Research.html">Research</a></li>
+                                <li><a href="Links.html">Links</a></li>
+                        </ul>
+                </div>
+                <div>
+                        <div>&nbsp</div>
+                        <h2>Leap Motion Virtual Piano</h2>
+                        <h3>Introduction</h3>
+                        <div>&nbsp</div>
+                        <p id="content">For our final project, we created a virtual piano using Unity that can be played using a leap motion device. Users hold their hands above the device and imitate playing a real piano. The leap motion senses the velocity at which you press the keys and will play an audio clip of the correct note.</p>
+                        <div>&nbsp</div>
+                        <img id="leapMotion" class="center" src="CS464/piano1.png" alt="virtual piano">
+                        <h3>Motivation</h3>
+                        <div>&nbsp</div>
+                        <p id="content">Both of the project creators have musical backgrounds and have spent many years learning to play the piano as well as several other instruments. With the recent pandemic, we wondered how music could be played virtually to potentially teach people to play the piano without actually needing one.</p>
+                        <div>&nbsp</div>
+                        <img id="leapMotion" class="center" src="CS464/piano4.png" alt="virtual piano">
+                        <h3>Methodology</h3>
+                        <div>&nbsp</div>
+                        <p id="content">We took a pre-existing model, made by a group from a previous semester and uploaded it to our project in Unity. We added the piano,  leap motion device, lighting, and adjusted the camera to see a more condensed version of the piano. The view is centered around middle C to allow the player to comfortably play most beginner piano songs using both their left and right hands.</p>
+						<div>&nbsp;</div>
+						<p id="content">After we added the piano and adjusted the layout, we began to work on the playing aspect of the piano. Each key has a box collider that has been flattened to just appear on the top of the key. Then, we added a capsule collider to bone three of each finger. Bone three is the top portion of the finger or the tip.</p>
+						<div>&nbsp;</div>
+						<p id="content">Each key was given a script, called NotePlayer to then make it move and play the correct note. We created and edited this script in Visual Studio Code. The first issue we ran into was the fact that all of the keys would collide with each other on start. We added a line of code to avoid this issue. On start, we also loaded in the audio clip. We created a function, called OnCollisionEnter, to occur when a collision between a finger and key was detected. This is a common function among unity users. In this function, we check to see if the collision is greater than a certain magnitude. We were having issues with the fact that notes were being played when they weren't meant to because other fingers would accidentally collide with them. We found that requiring a certain magnitude made less accidental notes. If there is a collision greater than this magnitude, we would set a boolean isActive to true because the note is actively being played. We would also play the correct note and move the key down. After the collision exit, we then set isActive to false. In the Update function, if the key was lowered and isActive was set to false, or not currently being played, we would then raise the key back up. This allowed the user to hold the key down, rather than just pressing it and raising it back up. In the future, the on collision function could also track the magnitude of collision and play the audio clip at a certain volume for each magnitude type. This would allow the player to play both loud and soft notes like on a real piano. Throughout the script, we also added some various console logging for debugging.</p>
+						<div>&nbsp;</div>
+						<p id="content">After we implemented the script, we added an audio clip to each key to play when a collision with that key occurs. We were unable to find audio clips for the entire piano that were of good quality and free. We only found the fourth octave, starting at C4 and going to B4, chromatically. This means it can play a total of 12 notes. Another potential improvement is implementing the entire range of the piano.</p>
+						<div>&nbsp;</div>
+						<p id="content">Throughout the project,we noticed that the leap motion device is fairly finicky and the collision detection portion required a lot of additional refinement. We made the hands smaller than they would appear on a real piano because their colliders were too big and were playing unwanted notes to the sides of the actual note. It also struggles to track if the user's hands are too far out of its range. Currently the range is fairly small and only allows for playing a smaller range of notes.</p>
+                        <div>&nbsp</div>
+                        <img id="leapMotion" class="center" src="CS464/piano2.png" alt="virtual piano">
+                        <div>&nbsp</div>
+                </div>
 
+
+
+        </body>
+        <footer>
+                <p>Created for CS464: Human-Computer Interaction SP21 final project.</p>
+        </footer>
+</html>

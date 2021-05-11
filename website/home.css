@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1d1d1d;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding-left: 15vw;
+}
+
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #ffffff;
+    color: #1d1d1d;
+}
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px 15vw;
+    background-color: #1d1d1d;
+    color: #ffffff;
+}
+
+header h1 {
+    margin-left: 15px;
+    padding-top:10px;
+}
+
+.header-logo {
+    height: 40px;
+}
+
+.center {
+    margin: auto;
+    width: 70%;
+}
+
+main {
+    padding: 7vh 0px;
+}
+h2 {
+    padding-left: 150px;
+}
+h3 {
+    padding-top:10px;
+    padding-left: 175px;
+}
+#content{
+    padding-left: 175px;
+    padding-right: 175px;
+}
+#leapMotion{
+    width: 400px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    width: 100%;
+    background-color: #1d1d1d;
+    color: #ffffff;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#Rebecca-header {
+	padding-top: 20px;
+	padding-bottom: 10px;
+    font-size: 2vw;
+    font-weight: bold;
+}
+#Rebecca-content {
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+}
+#Rebecca {
+	padding-right: 20px;
+	width: 200px; 
+	height: 200px;
+    padding-left: 190px;
+}
+
+#Morgan-header {
+	padding-top: 20px;
+	padding-bottom: 10px;
+    font-size: 2vw;
+    font-weight: bold;
+}
+#Morgan-content {
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+}
+#Morgan {
+	padding-right: 20px;
+	width: 200px; 
+	height: 200px;
+    padding-left: 190px;
+}
+
