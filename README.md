@@ -11,8 +11,8 @@ This is a project created for CS464: Introduction to Human-Computer Interaction 
 
 ### Links
 * Prototype 1 video: https://youtu.be/Gmu_GwXQX2U
-* Survey video: https://youtu.be/qH1AH1yFqgo
+* Survey video (shortened version of the overview video): https://youtu.be/qH1AH1yFqgo
 * Website: https://www.cs.colostate.edu/~rkopacz/index.html
-* Overview Video:
+* Overview Video: https://youtu.be/YJnC1lQ7Vx8
 * Presentation Video: https://youtu.be/3XI1YQmOQKw
-* GitHub Repository: https://github.com/RebeccaKopacz/CS464-LeapPiano
+* GitHub Repository: https://github.com/csu-hci-projects/CS464-LeapMotionPiano
