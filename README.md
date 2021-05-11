@@ -11,10 +11,8 @@ This is a project created for CS464: Introduction to Human-Computer Interaction 
 
 ### Links
 * Prototype 1 video: https://youtu.be/Gmu_GwXQX2U
-* Website: https://www.cs.colostate.edu:4444/~mvanderi/cs464/index.html#/
-    * This is where the website will be hosted. It currently has not been updated with our project information.
+* Survey video: https://youtu.be/qH1AH1yFqgo
+* Website: https://www.cs.colostate.edu/~rkopacz/index.html
 * Introduction Video:
-* Presentation Video:
+* Presentation Video: https://youtu.be/3XI1YQmOQKw
 * GitHub Repository: https://github.com/RebeccaKopacz/CS464-LeapPiano
-
-\*note: links not currently ready but will be finished by Checkpoint 4.
