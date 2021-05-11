@@ -13,6 +13,6 @@ This is a project created for CS464: Introduction to Human-Computer Interaction 
 * Prototype 1 video: https://youtu.be/Gmu_GwXQX2U
 * Survey video: https://youtu.be/qH1AH1yFqgo
 * Website: https://www.cs.colostate.edu/~rkopacz/index.html
-* Introduction Video:
+* Overview Video:
 * Presentation Video: https://youtu.be/3XI1YQmOQKw
 * GitHub Repository: https://github.com/RebeccaKopacz/CS464-LeapPiano
